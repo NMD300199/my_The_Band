@@ -1,0 +1,507 @@
+.main{
+    position: relative;
+}
+#header {
+    background-color:#000;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 46px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header__menu{
+    display: inline-block;
+}
+
+.header__menu-list{
+    list-style: none;
+    
+}
+
+.header__menu-item{
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    margin-left: -3px;
+}
+
+.header__menu-item a,
+.header__menu-item-more{
+    text-decoration: none;
+    color: var(--text--color);
+    padding: 12px 24px;
+    line-height: 1.5;
+    display: inline-block;
+    font-size:1.5rem;
+    text-transform: uppercase;
+}
+.header__menu-item-more:hover,
+.header__menu-item:hover a{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+.header__menu-item-child{
+    position: absolute;
+    list-style: none;
+    background-color: #fff;
+    color: #000;
+    left: 0;
+    top: 100%;
+    width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.3);
+    display: none;
+}
+
+.header__menu-item-child li{
+    padding: 8px 16px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    text-transform: none;
+    display: block;
+    width: 100%;
+}
+
+.header__menu-item-more:hover .header__menu-item-child{
+    display: block;
+}
+.header__menu-item-child li:hover{
+    background-color: #ccc;
+}
+
+.header__search{
+    padding: 14px 23px;
+    float: right;
+    display: inline-block;
+    height: 100%;
+}
+.header__search:hover{
+    cursor: pointer;
+    background-color: #f44336;
+}
+.header__search-icon{
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* Slider */
+#slider {
+    margin-top: 46px;
+}
+.newyork {
+    margin-top: 46px;
+    padding-top: 50%;
+    width: 100%;
+    background-image: url('/band/assest/img/ny.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 2s;
+}
+
+/* @keyframes slide {
+    from {
+        background-image: url('/band/assest/img/ny.jpg');
+    }
+    to {
+        background-image: url('/band/assest/img/chicago.jpg');
+    }
+} */
+.slider__text{
+    position: absolute;
+    bottom:0;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 32px 16px;
+}
+
+.slider__text-heading{
+    margin: 10px 0;
+    line-height:2;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.slider__text-content{
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+/* contain */
+.common {
+    padding: 64px 0;
+}
+
+.common-header{
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    line-height: 50px;
+}
+
+.common-header-sub{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #8e8e8e;
+}
+
+.band{
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.menbers{
+    justify-content: space-around;
+    padding: 32px 0;
+}
+
+.menbers-name{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.menbers-img {
+    width: 154px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* tour */
+.background-black{
+    background-color: #000;
+}
+
+.common-header-tour{
+    color: #fff;
+}
+
+.times{
+    /* background-color: #fff; */
+    margin-top: 35px;
+}
+
+.times-list{
+    list-style: none;
+    background-color: #fff;
+}
+
+.times-list-date{
+    font-size:1.5rem;
+    padding: 8px 16px;
+    color: #8e8e8e;
+    line-height: 22px;
+    border-bottom: 1px solid #ddd;
+}
+
+.times-list-sale{
+    display: inline-block;
+    background-color: #f44336;
+    color: #fff;
+    font-size:1.5rem;
+    padding: 0 8px;
+    margin-left: 16px;
+}
+
+.times-list-ticket{
+    display: inline-block;
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0 8px;
+    margin-right: 16px;
+}
+
+.tour{
+    margin-top: 32px;
+}
+
+.tour-event-img{
+    width: 100%;
+    display: block;
+}
+
+.tour-event-img:hover{
+    opacity: 0.6;
+}
+
+.tour-event-content{
+    padding: 16px 16px;
+    background-color: #fff;
+}
+.event-content-header{
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    line-height: 22px;
+}
+
+.event-content-time{
+    font-size: 1.5rem;
+    margin: 15px 0;
+    line-height: 22px;
+    opacity: 0.6;
+}
+
+.event-content-litte{
+    font-size: 1.5rem;
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+.event-content-buy{
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    outline:none;
+    border: none;
+    padding: 8px 16px;
+}
+
+.event-content-buy:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Modal layout */
+
+.modal-layout{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    padding-top: 100px;
+    display: none;
+}
+
+.modal-layout.open{
+    display: block;
+}
+
+@keyframes modalfacein {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Modal */
+.modal{
+    width: 900px;
+    z-index: 1;
+    background-color: #fff;
+    position: relative;
+    margin: auto;
+    animation: modalfacein 0.3s ease-in-out;
+}
+
+.modal-exit{
+    float: right;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 20px 16px;
+}
+
+.modal-exit:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-header{
+    background-color: #009688;
+    width: 100%;
+    padding: 32px 16px;
+    color: #fff;
+}
+
+.modal-header-text{
+    font-size: 3rem;
+    text-align: center;
+    line-height: 45px;
+    margin: 10px 0;
+    letter-spacing: 4px;
+}
+
+.modal-header-text p{
+    display: inline-block;
+}
+
+.modal-contain{
+    padding: 0 16px;
+}
+
+.modal-contain-text{
+    margin: 15px 0;
+    font-size:1.5rem;
+    line-height: 22px;
+}
+
+.modal-contain-text i{
+    font-size: 1.2rem;
+}
+.modal-contain-form{
+    width: 100%;
+    padding: 8px;
+    font-size: 1.5em;
+    border: 1px solid #ccc;
+}
+
+.modal-contain-pay{
+    background-color: #009688;
+    font-size: 1.5rem;
+    margin: 16px 0;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    padding: 16px;
+    text-transform: uppercase;
+}
+
+.modal-contain-pay:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-contain-close {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 20px;
+    padding: 8px 16px;
+    background-color: #f44336;
+    border: none;
+    margin: 16px 0;
+    align-items: baseline;
+}
+
+.modal-contain-close:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+.modal-contain-help{
+    float: right;
+    font-size: 1.5rem;
+    margin: 15px 0;
+    line-height: 22px;
+}
+
+.modal-contain-help a{
+    color: #3fa4f5;
+}
+
+/* contact */
+.contact{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+.contact-info{
+    list-style: none;
+}
+
+.contact-info-list{
+    display: flex;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    align-items: baseline;
+}
+
+.contact-info-icon{
+    width: 30px;
+    font-size: 1.5rem;
+}
+
+.contact-send-menber{
+    display: flex;
+    margin: 0 -8px 8px;
+}
+
+.contact-send-person{
+    padding: 8px;
+    margin: 0 8px;
+    font-size: 1.6rem;
+}
+
+.contact-send-mess{
+    width: 100%;
+    padding: 8px;
+    font-size: 1.6rem;
+}
+
+.contact-send-btn{
+    float: right;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    margin-top: 16px;
+    border: none;
+    outline: none;
+}
+
+.contact-send-btn:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+/* map */
+.img-map{
+    opacity: 0.8;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* footer */
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.footer-icon{
+    font-size: 2.4rem;
+    line-height: 30px;
+    opacity: 0.6;
+}
+
+.footer-icon i:hover{
+    opacity: 0.7;
+}
+
+.footer-text{
+    margin: 15px 0;
+    font-size: 1.5rem;
+    line-height: 22px;
+    opacity: 0.6;
+}
+
+.footer-text-link{
+    color: #000;
+}
